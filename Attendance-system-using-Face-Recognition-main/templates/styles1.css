@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #050801;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #03e9f4;
+}
+
+.container {
+    text-align: center;
+}
+
+.wrapper {
+    background: #050801;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.row i {
+    position: absolute;
+    left: 1.5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #03e9f4;
+    border-radius: 5px;
+    background-color: #050801;
+    color: #03e9f4;
+}
+
+.custom-button[type="submit"] {
+    background-color: #03e9f4;
+    border: none;
+    color: #050801;
+    padding: 15px 30px;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #028090;
+}
+
+/* Additional styles for the button */
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+.custom-button:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.button span {
+    position: absolute;
+    display: block;
+}
+
+
+
+
+.custom-button {
+    background-color: #0005; /* Set the background color */
+    color: #03e9f4; /* Set the text color */
+    padding: 15px 30px; /* Adjust padding to increase/decrease button size */
+    margin-top: 20px;
+    border: none; /* Remove border */
+    cursor: pointer;
+    border-radius: 5px; /* Optional: Add rounded corners to the button */
+}
